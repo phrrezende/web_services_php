@@ -11,7 +11,8 @@
 				break;
 			case 'greetUser':
 				$data= $lib->greetUser(
-						filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING)
+						//filter_input(INPUT_GET, 'name', FILTER_SANITIZE_STRING)
+						$_GET['name']
 					);
 				break;
 			default:
